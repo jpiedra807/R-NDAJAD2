@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// LIBRARIES
+// -----------------------------------------------------------------------------
+
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+// -----------------------------------------------------------------------------
+// Estilos de la aplicación
+// -----------------------------------------------------------------------------
+
+@import "general.style", "landingPage.style", "mainDashboard.style", "components/sNombreTareaebar.style", "components/footer.style", "components/header.style";

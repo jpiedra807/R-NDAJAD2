@@ -1,0 +1,450 @@
+// Tarjetas CSS
+
+.creditCardForm {
+  max-wNombreTareath: 700px;
+  background-color: transparet;
+  margin: 20px auto;
+  overflow: hNombreTareaden;
+  padding: 25px;
+  color: #4c4e56;
+}
+
+.creditCardForm label {
+  wNombreTareath: 100%;
+  margin-bottom: 10px;
+}
+
+.creditCardForm .heading h1 {
+  text-align: center;
+  color: #4c4e56;
+}
+
+.creditCardForm .payment {
+  float: left;
+  font-size: 18px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #5DA3B4;
+    opacity: 0.8;
+    color: mNombreTareanightblue;
+}
+
+.creditCardForm .payment .form-group {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.creditCardForm .payment .form-control {
+  line-height: 40px;
+  height: auto;
+  padding: 0 16px;
+  
+}
+
+.creditCardForm .owner {
+  wNombreTareath: 63%;
+  margin-right: 10px;
+}
+
+.creditCardForm .CVV {
+  wNombreTareath: 35%;
+}
+
+.creditCardForm #card-number-field {
+  wNombreTareath: 100%;
+}
+
+.creditCardForm #expiration-date {
+  wNombreTareath: 49%;
+}
+
+.creditCardForm #credit_cards {
+  wNombreTareath: 50%;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.creditCardForm #pay-now {
+  wNombreTareath: 100%;
+  margin-top: 25px;
+}
+
+.creditCardForm .payment .btn {
+  wNombreTareath: 100%;
+  margin-top: 3px;
+  font-size: 24px;
+  background-color: #074747;
+  color: rgb(240, 226, 226);
+}
+
+.creditCardForm .payment select {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.transparent {
+  opacity: 0.2;
+}
+
+.creditCardForm img {
+  wNombreTareath: 50px;
+  height: 40px;
+}
+
+@media(max-wNombreTareath: 650px) {
+  .creditCardForm .owner,
+  .creditCardForm .CVV,
+  .creditCardForm #expiration-date,
+  .creditCardForm #credit_cards {
+      wNombreTareath: 100%;
+  }
+  .creditCardForm #credit_cards {
+      text-align: left;
+  }
+}
+
+.cardpad {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-table	;
+  border: 1px solNombreTarea;
+  border-radius: 25px;
+  wNombreTareath: 260px;
+  line-height: 20px;
+  height: 20px;
+  margin-top:20px; 
+  background: rgba(255, 255, 250, 0.5);
+      a {
+        cursor: pointer;
+      }
+
+      
+}
+
+.cardpadform {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-table	;
+  border: 1px solNombreTarea;
+  border-radius: 25px;
+  wNombreTareath: 95%;
+  line-height: 20px;
+  height: 20px;
+  margin-top:20px; 
+}
+
+
+// Aqui terminan los estilos de las tarjetas
+
+.creditCardForm .btn-success  {
+  margin-bottom: 20px;
+}
+
+.creditCardForm .btn-primary  {
+  margin-bottom: 20px;
+}
+
+.creditCardForm .btn-danger  {
+  margin-bottom: 20px;
+}
+
+// Estilos dashboard
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.dashboard-page {
+  wNombreTareath: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-wNombreTareath: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #dbd804;
+    wNombreTareath: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form label {
+    text-align: left;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #2872b8;
+    wNombreTareath: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    opacity: 0.2;
+
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,
+  .form button:active,
+  .form button:focus {
+    background: #dfae0f;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #77b828;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  
+  .container {
+    background-image: url(../../sources/images/fondo2.jpg);
+    position: relative;
+    z-index: 1;
+    max-wNombreTareath: 300px;
+    margin: 0 auto;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+}
+//Final estilos dashboard
+
+// Dashboard
+
+.importante {
+margin: 10px 0;
+color: #6D3F03;
+background-color: #FFF4E5;
+text-align: center;
+padding: 10px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+border: solNombreTarea 1px #F9C16D;
+border-top-color: #F9C16D;
+text-align:center;
+}
+
+.wrapperEmpleados {
+  max-wNombreTareath: 1600px;
+  background-color: rgba(255,255,255,0.9);
+  margin: 20px auto;
+  overflow: none;
+  padding: 25px;
+  color: #4c4e56;
+}
+.wrapperEmpleados img {
+  wNombreTareath: 25px;
+  height: 25px;
+  margin: 0 20px;
+}
+
+.imagenfondo{
+  background-image: url(../../sources/images/fondo2.jpg);
+  background-repeat: no-repeat;
+  wNombreTareath: 100%;
+  background-size: cover;
+  height: 800px;
+
+}
+.imagenfondo2{
+  background-image: url(../../sources/images/fondo.jpg);
+  background-repeat: no-repeat;
+  wNombreTareath: 100%;
+  background-size: cover;
+
+}
+
+
+
+.slNombreTareaer {
+  transition: 2s;
+  height: 300px;
+  position: relative;
+  overflow: hNombreTareaden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slNombreTareaer__nav {
+  wNombreTareath: 12px;
+  height: 12px;
+  margin: 2rem 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solNombreTarea #ccc;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-backface-visibility: hNombreTareaden;
+          backface-visibility: hNombreTareaden;
+}
+.slNombreTareaer__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+          animation: check 0.4s linear forwards;
+}
+.slNombreTareaer__nav:checked:nth-of-type(1) ~ .slNombreTareaer__inner {
+  left: 0%;
+}
+.slNombreTareaer__nav:checked:nth-of-type(2) ~ .slNombreTareaer__inner {
+  left: -100%;
+}
+.slNombreTareaer__nav:checked:nth-of-type(3) ~ .slNombreTareaer__inner {
+  left: -200%;
+}
+.slNombreTareaer__nav:checked:nth-of-type(4) ~ .slNombreTareaer__inner {
+  left: -300%;
+}
+.slNombreTareaer__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  wNombreTareath: 400%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+.slNombreTareaer__contents {
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slNombreTareaer__image {
+  font-size: 2.7rem;
+      color: #00383f;
+}
+.slNombreTareaer__caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.slNombreTareaer__txt {
+  color: #999;
+  margin-bottom: 3rem;
+  max-wNombreTareath: 300px;
+}
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+  }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  }
+}
+
+.btn {
+  background-color: #074747;
+    color: #f0e2e2;
+}
+
+.table-primary, .table-primary>td, .table-primary>th, .thead-dark {
+  background-color: #074747;
+  color: white;
+}
+
+.table{
+  background-color: white;
+  margin-top: 150px;
+}
+

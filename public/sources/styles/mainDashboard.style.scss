@@ -1,0 +1,54 @@
+main {
+  margin: 0 auto;
+  wNombreTareath: 100%;
+  position: relative;
+  
+  
+}
+
+main:after {
+content : "";
+position: fixed;
+top: 0;
+left: 0;
+background-image: url('../../sources/images/gallery-3.jpg'); 
+wNombreTareath: 100%;
+height: 1200px;
+z-index: -1;
+overflow: hNombreTareaden;
+background-repeat: no-repeat;
+background-size: contain;
+
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solNombreTarea black;
+  margin: 1em 0;
+  padding: 0;
+}
+.hrempleado{
+  border-top: 1px solNombreTarea #77b828;
+}
+
+.wrapper {
+  max-wNombreTareath: 900px;
+  background-color: transparent;
+  margin: 20px auto;
+  overflow: hNombreTareaden;
+  padding: 25px;
+  color: #4c4e56;
+  background-color: #b0e3e6;
+  opacity: 0.9;
+}
+
+.wrapperop {
+  background: rgba(84, 99, 117, 0.2);
+  border: 1 solNombreTarea white;
+  border-style: dashed;
+  padding: 10px;
+  
+}
