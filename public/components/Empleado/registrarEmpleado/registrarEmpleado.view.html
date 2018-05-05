@@ -1,0 +1,383 @@
+<!--<div class="wrapper">
+  <div class="login-card2 text-center">
+  
+    <h1>Bienvenido</h1>
+    <h1>Ingrese su informacion</h1>
+    <br>
+    <img src="../../sources/images/logo.png" alt="">-->
+
+<!--
+<div class="container-fluid">
+  <div class="creditCardForm">
+    <div class="heading">
+      <h1>Registro de cliente</h1>
+    </div>
+    <hr/>
+    <div class="payment">
+      <form ng-submit="vm.registrarCliente(vm.nuevoCliente)" class="">
+        <div class="form-group">
+          <label for="">Cédula</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.cedula" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fotografía</label>
+          <input type="file" class="form-control" ng-model="vm.nuevoCliente.foto" img-upload required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Primer nombre</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerNombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Segundo nombre</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoNombre">
+        </div>
+
+        <div class="form-group">
+          <label for="">Primer apellido</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerApellido" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Segundo apellido</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoApellido">
+        </div>
+
+        <div class="form-group">
+          <label for="">Correo electrónico</label>
+          <input type="email" class="form-control" ng-model="vm.nuevoCliente.correo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Teléfono</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fecha de nacimiento</label>
+          <input type="date" class="form-control" ng-model="vm.nuevoCliente.fechaNacimiento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Provincia</label>
+          <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.nuevoCliente.provincia)"
+            ng-model="vm.nuevoCliente.provincia" required>
+          <datalist id="sltProvincia">
+            <option ng-repeat="provincia in vm.provincias track by provincia._id" value="{{provincia.name}}" id="{{provincia._id}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Cantón</label>
+          <input list="sltCanton" name="sltCanton" class="form-control"  ng-change="vm.rellenarDistrito(vm.nuevoCliente.canton)" ng-model="vm.nuevoCliente.canton" required>
+          <datalist id="sltCanton">
+            <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Distrito</label>
+          <input list="sltDistrito" name="sltDistrito" class="form-control" ng-model="vm.nuevoCliente.distrito" required>
+          <datalist id="sltDistrito">
+            <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Dirección Exacta</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.direccionExacta" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Contraseña</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.contrasenna" required>
+        </div>
+
+        <button type="submit" class="btn">Registrar</button>
+      </form>
+    </div>
+
+
+  </div>
+</div>
+-->
+<!--
+  </div>
+</div>-->
+
+<!-- 
+
+
+<section id="dashboard" class="">
+  <form action="" class="form-horizontal" ng-submit="vm.registrarCliente(vm.nuevoCliente)">
+    <div class="form-group">
+      <label for="">Cédula</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.cedula" required>
+    </div>
+    <div class="form-group">
+      <label for="">Foto</label>
+      <input type="file" class="form-control" ng-model="vm.nuevoCliente.foto" img-upload required>
+    </div>
+    <div class="form-group">
+      <label for="">Primer nombre</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerNombre" required>
+    </div>
+    <div class="form-group">
+      <label for="">Segundo nombre</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoNombre">
+    </div>
+    <div class="form-group">
+      <label for="">Primer apellido</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerApellido" required>
+    </div>
+    <div class="form-group">
+      <label for="">Segundo apellido</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoApellido">
+    </div>
+    <div class="form-group">
+      <label for="">Correo electrónico</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.correo" required>
+    </div>
+    <div class="form-group">
+      <label for="">Teléfono</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.telefono" required>
+    </div>
+    <div class="form-group">
+      <label for="">Fecha de nacimiento</label>
+      <input type="date" class="form-control" ng-model="vm.nuevoCliente.fechaNacimiento" required>
+    </div> 
+
+
+
+    <div class="form-group">
+      <label for="sltProvincia">Provincia</label>
+      <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.nuevoCliente.provincia)"
+        ng-model="vm.nuevoCliente.provincia" required>
+      <datalist id="sltProvincia">
+        <option ng-repeat="provincia in vm.provincias track by provincia._id" value="{{provincia.name}}" id="{{provincia._id}}">
+      </datalist>
+    </div>
+
+    <div class="form-group">
+      <label for="sltCanton">Cantón</label>
+      <input list="sltCanton" class="form-control" name="sltCanton" ng-change="vm.rellenarDistrito(vm.nuevoCliente.canton)" ng-model="vm.nuevoCliente.canton"
+        required>
+      <datalist id="sltCanton">
+        <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+      </datalist>
+    </div>
+
+    <div class="form-group">
+      <label for="sltDistrito">Distrito</label>
+      <input list="sltDistrito" class="form-control" name="sltDistrito" ng-model="vm.nuevoCliente.distrito" required>
+      <datalist id="sltDistrito">
+        <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+      </datalist>
+    </div>
+
+    <div class="form-group">
+      <label for="">Dirección exacta</label>
+      <input type="text" class="form-control" ng-model="vm.nuevoCliente.direccionExacta" required>
+    </div>
+
+    <div class="form-group">
+      <label for="">Contraseña</label>
+      <input type="password" class="form-control" ng-model="vm.nuevoCliente.contrasenna" required>
+    </div>
+
+    <button type="submit">Registrar</button>
+  </form>
+</section> -->
+
+<!--
+<div class="container">
+  <div class="">
+    <div class="login-page">
+      <form ng-submit="vm.registrarCliente(vm.nuevoCliente)" class="">
+        <legend>Registro de cliente</legend>
+        <br>
+        <div class="form-group">
+          <label for="">Cédula</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.cedula" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fotografía</label>
+          <input type="file" class="form-control" ng-model="vm.nuevoCliente.foto" img-upload required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Primer nombre</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerNombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Segundo nombre</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoNombre">
+        </div>
+
+        <div class="form-group">
+          <label for="">Primer apellido</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerApellido" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Segundo apellido</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoApellido">
+        </div>
+
+        <div class="form-group">
+          <label for="">Correo electrónico</label>
+          <input type="email" class="form-control" ng-model="vm.nuevoCliente.correo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Teléfono</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Fecha de nacimiento</label>
+          <input type="date" class="form-control" ng-model="vm.nuevoCliente.fechaNacimiento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Provincia</label>
+          <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.nuevoCliente.provincia)"
+            ng-model="vm.nuevoCliente.provincia" required>
+          <datalist id="sltProvincia">
+            <option ng-repeat="provincia in vm.provincias track by provincia._id" value="{{provincia.name}}" id="{{provincia._id}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Cantón</label>
+          <input list="sltCanton" name="sltCanton" class="form-control" ng-change="vm.rellenarDistrito(vm.nuevoCliente.canton)" ng-model="vm.nuevoCliente.canton"
+            required>
+          <datalist id="sltCanton">
+            <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Distrito</label>
+          <input list="sltDistrito" name="sltDistrito" class="form-control" ng-model="vm.nuevoCliente.distrito" required>
+          <datalist id="sltDistrito">
+            <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="">Dirección Exacta</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.direccionExacta" required>
+        </div>
+
+        <div class="form-group">
+          <label for="">Contraseña</label>
+          <input type="text" class="form-control" ng-model="vm.nuevoCliente.contrasenna" required>
+        </div>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="container">
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" ng-submit="vm.preRegistrarCliente(vm.nuevoCliente)">
+
+        <img src="../../sources/images/logo.png" alt="" ng-hide="vm.rol != null">
+
+        <label for="">Cédula</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.cedula" required>
+
+        <label for="">Fotografía</label>
+        <input type="file" class="form-control" ng-model="vm.nuevoCliente.foto" img-upload required>
+
+        <label for="">Primer nombre</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerNombre" required>
+
+        <label for="">Segundo nombre</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoNombre">
+
+        <label for="">Primer apellido</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.primerApellido" required>
+
+        <label for="">Segundo apellido</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.segundoApellido">
+
+        <label for="">Correo electrónico</label>
+        <input type="email" class="form-control" ng-model="vm.nuevoCliente.correo" required>
+
+        <label for="">Teléfono</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.telefono" required>
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" class="form-control" ng-model="vm.nuevoCliente.fechaNacimiento" required>
+
+        <label for="">Provincia</label>
+        <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.nuevoCliente.provincia)"
+          ng-model="vm.nuevoCliente.provincia" required>
+        <datalist id="sltProvincia">
+          <option ng-repeat="provincia in vm.provincias track by provincia._id" value="{{provincia.name}}" id="{{provincia._id}}">
+        </datalist>
+
+        <label for="">Cantón</label>
+        <input list="sltCanton" name="sltCanton" class="form-control" ng-change="vm.rellenarDistrito(vm.nuevoCliente.canton)" ng-model="vm.nuevoCliente.canton"
+          required>
+        <datalist id="sltCanton">
+          <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+        </datalist>
+
+        <label for="">Distrito</label>
+        <input list="sltDistrito" name="sltDistrito" class="form-control" ng-model="vm.nuevoCliente.distrito" required>
+        <datalist id="sltDistrito">
+          <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+        </datalist>
+
+        <label for="">Dirección Exacta</label>
+        <input type="text" class="form-control" ng-model="vm.nuevoCliente.direccionExacta" required>
+        
+        <!--<button ng-click="vm.getLocation()">Try It</button>-->
+        
+
+
+
+        <ng-map id="map" center='current-position'
+    geo-fallback-center="[40.74, -74.18]"
+    geo-callback="vm.callbackFunc('you')"
+    ></ng-map>
+
+
+
+        <!--<div id="map"></div>
+        <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}"></div>
+        
+      </div>-->
+
+
+
+        <select class="form-control" ng-model="vm.nuevoCliente.sucursalAsignada" required>
+          <option value="">Seleccione una sucursal</option>
+          <option ng-repeat="sucursal in vm.listaSucursales" value="{{sucursal.nombre}}">{{sucursal.nombre}}</option>
+        </select>
+
+
+        <label for="">Contraseña</label>
+        <input type="password" ng-model="vm.nuevoCliente.contrasenna" required>
+
+
+
+        <button type="submit" class="btn">Registrar</button>
+        <p ng-hide="vm.rol != null" class="message">¿Ya tiene una cuenta?
+          <a href="/#!/logIn">Iniciar sesión</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

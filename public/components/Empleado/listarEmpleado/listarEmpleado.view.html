@@ -1,0 +1,144 @@
+<!--
+<div navegacion-Principal></div>
+<div menu-Lateral></div>
+<section NombreTarea="dashboard">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Foto</th>
+                <th>Nombre Completo</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Dirección</th>
+                <th>Dirección exacta</th>
+                <th>Editar</th>
+                <th>Activar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="Empleado in vm.listaClientes" ng-if="Empleado.estado === 'activo'">
+                <td>{{Empleado.cedula}}</td>
+                <td><img src="{{Empleado.foto}}" alt="" wNombreTareath="60" height="60"></td>
+                <td>{{Empleado.obtenerNombreCompleto()}}</td>
+                <td>{{Empleado.correo}}</td>
+                <td>{{Empleado.telefono}}</td>
+                <td>{{Empleado.fechaNacimiento | date}}</td>
+                <td>{{Empleado.obtenerDatosProvCantDist()}}</td>
+                <td>{{Empleado.direccionExacta}}</td>
+                <td>
+                    <button class="btn " type="button" ng-click="vm.modificar(Empleado)">Modificar</button>
+                </td>
+                <td><button type="button" class="btn" ng-click="vm.cambiarEstado('inactivo', Empleado)">Desactivar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Foto</th>
+                <th>Nombre Completo</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Dirección</th>
+                <th>Dirección exacta</th>
+                <th>Editar</th>
+                <th>Activar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="Empleado in vm.listaClientes" ng-if="Empleado.estado === 'inactivo'">
+                <td>{{Empleado.cedula}}</td>
+                <td><img src="{{Empleado.foto}}" alt="" wNombreTareath="60" height="60"></td>
+                <td>{{Empleado.obtenerNombreCompleto()}}</td>
+                <td>{{Empleado.correo}}</td>
+                <td>{{Empleado.telefono}}</td>
+                <td>{{Empleado.fechaNacimiento | date}}</td>
+                <td>{{Empleado.obtenerDatosProvCantDist()}}</td>
+                <td>{{Empleado.direccionExacta}}</td>
+                <td>
+                    <button class="btn " type="button" ng-click="vm.modificar(Empleado)">Modificar</button>
+                </td>
+                <td><button type="button" class="btn" ng-click="vm.cambiarEstado('activo', Empleado)">Activar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+-->
+
+<section NombreTarea="" class="">
+    <div class="wrapperEmpleados">
+    <table class="table">
+        <h1 class="col-12">Empleados activos</h1>
+        <hr/>
+        <thead class="table-primary">
+            <tr>
+                <th>Cédula</th>
+                <th>Foto</th>
+                <th>Nombre Completo</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Dirección</th>
+                <th>Dirección exacta</th>
+                <th>Editar</th>
+                <th>Desactivar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="Empleado in vm.listaClientes" ng-if="Empleado.estado === 'activo'">
+                <td>{{Empleado.cedula}}</td>
+                <td><img src="{{Empleado.foto}}" alt="" wNombreTareath="60" height="60"></td>
+                <td>{{Empleado.obtenerNombreCompleto()}}</td>
+                <td>{{Empleado.correo}}</td>
+                <td>{{Empleado.telefono}}</td>
+                <td>{{Empleado.fechaNacimiento | date}}</td>
+                <td>{{Empleado.obtenerDatosProvCantDist()}}</td>
+                <td>{{Empleado.direccionExacta}}</td>
+                <td>
+                    <button class="btn " type="button" ng-click="vm.modificar(Empleado)"><i class="far fa-edit"></i></button>
+                </td>
+                <td><button type="button" class="btn" ng-click="vm.cambiarEstado('inactivo', Empleado)"><i class="far fa-times-circle"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table">
+        <h1 class="col-12">Empleados desactivados</h1>
+        <hr/>
+        <thead class="table-primary">
+            <tr>
+                <th>Cédula</th>
+                <th>Foto</th>
+                <th>Nombre Completo</th>
+                <th>Correo electrónico</th>
+                <th>Teléfono</th>
+                <th>Fecha de nacimiento</th>
+                <th>Dirección</th>
+                <th>Dirección exacta</th>
+                <th>Editar</th>
+                <th>Activar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="Empleado in vm.listaClientes" ng-if="Empleado.estado === 'inactivo'">
+                <td>{{Empleado.cedula}}</td>
+                <td><img src="{{Empleado.foto}}" alt="" wNombreTareath="60" height="60"></td>
+                <td>{{Empleado.obtenerNombreCompleto()}}</td>
+                <td>{{Empleado.correo}}</td>
+                <td>{{Empleado.telefono}}</td>
+                <td>{{Empleado.fechaNacimiento | date}}</td>
+                <td>{{Empleado.obtenerDatosProvCantDist()}}</td>
+                <td>{{Empleado.direccionExacta}}</td>
+                <td>
+                    <button class="btn " type="button" ng-click="vm.modificar(Empleado)"><i class="far fa-edit"></button>
+                </td>
+                <td><button type="button" class="btn" ng-click="vm.cambiarEstado('activo', Empleado)"><i class="far fa-check-circle"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>

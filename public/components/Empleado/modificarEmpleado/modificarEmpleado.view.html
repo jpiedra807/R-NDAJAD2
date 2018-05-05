@@ -1,0 +1,86 @@
+<section NombreTarea="dashboard">
+  <div class="container">
+    <form action="" class="form-horizontal" ng-submit="vm.modifCliente(vm.modificarCliente)">
+      <h1>Editar mi perfil</h1>
+      <hr/>
+
+      <div class="row">
+        <div class="col-md-2">
+          <div class="text-center">
+            <img src="{{Empleado.foto}}" class="img-circle" alt="fotodeperfil">
+            <h6>Cambiar mi foto...</h6>
+
+            <input type="file" class="form-control" ng-model="vm.modificarCliente.foto" required>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <small>
+            <label for="">Cédula</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.cedula" required>
+
+            <label for="">Primer nombre</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.primerNombre" required>
+
+            <label for="">Segundo nombre</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.segundoNombre">
+
+
+            <label for="">Primer apellNombreTareao</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.primerApellNombreTareao" required>
+
+            <label for="">Segundo apellNombreTareao</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.segundoApellNombreTareao">
+
+            <label for="">Correo electrónico</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.correo" readonly>
+
+
+          </small>
+        </div>
+
+        <div class="col-md-5">
+          <small>
+            <label for="">Teléfono</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.telefono" required>
+
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" class="form-control" ng-model="vm.modificarCliente.fechaNacimiento" required>
+
+            <label for="sltProvincia">Provincia</label>
+            <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.modificarCliente.provincia)"
+              ng-model="vm.modificarCliente.provincia" required>
+            <datalist NombreTarea="sltProvincia">
+              <option ng-repeat="provincia in vm.provincias track by provincia._NombreTarea" value="{{provincia.name}}" NombreTarea="{{provincia._NombreTarea}}">
+            </datalist>
+
+
+
+            <label for="sltCanton">Cantón</label>
+            <input list="sltCanton" class="form-control" name="sltCanton" ng-change="vm.rellenarDistrito(vm.modificarCliente.canton)"
+              ng-model="vm.modificarCliente.canton" required>
+            <datalist NombreTarea="sltCanton">
+              <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+            </datalist>
+
+
+
+            <label for="sltDistrito">Distrito</label>
+            <input list="sltDistrito" class="form-control" name="sltDistrito" ng-model="vm.modificarCliente.distrito" required>
+            <datalist NombreTarea="sltDistrito">
+              <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+            </datalist>
+
+
+            <label for="">Dirección exacta</label>
+            <input type="text" class="form-control" ng-model="vm.modificarCliente.direccionExacta" required>
+          </small>
+
+          <button class="btn btn-success form-control buttoneditar" type="submit">Completar Edicion</button>
+        </div>
+
+
+
+      </div>
+    </form>
+  </div>
+</section>

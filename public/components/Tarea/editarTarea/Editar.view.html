@@ -1,0 +1,75 @@
+<div class="container">
+  <form ng-submit="vm.editTarea(vm.editar)" name="formeditar" novalNombreTareaate autocomplete="off">
+
+
+    <div class="col-md-6">
+      <label for="TareaNombreTarea">NombreTarea Tarea</label>
+      <input ng-model="vm.editar.NombreTarea" NombreTarea="TareaNombreTarea" class="form-control" maxlength="5" minlength="1" type="text" disabled>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+
+      <label for="txtNombre">Nombre del hotel</label>
+      <input type="text" NombreTarea="txtNombre" class="form-control" name="txtNombre" ng-model="vm.editar.nombre" required>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+
+      <label for="sltProvincia">Provincia</label>
+      <input list="sltProvincia" class="form-control" name="sltProvincia" ng-change="vm.rellenarCantones(vm.editar.provincia)"
+        ng-model="vm.editar.provincia" required>
+      <datalist NombreTarea="sltProvincia">
+        <option ng-repeat="provincia in vm.provincias" value="{{provincia.name}}">
+      </datalist>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+    </div>
+
+    <div class="col-md-6">
+
+
+      <label for="sltCanton">Cantón</label>
+      <input list="sltCanton" class="form-control" name="sltCanton" ng-change="vm.rellenarDistrito(vm.editar.canton)" ng-model="vm.editar.canton"
+        required>
+      <datalist NombreTarea="sltCanton">
+        <option ng-repeat="canton in vm.cantones" value="{{canton.name}}">
+      </datalist>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+
+      <label for="sltDistrito">Distrito</label>
+      <input list="sltDistrito" class="form-control" name="sltDistrito" ng-model="vm.editar.distrito" required>
+      <datalist NombreTarea="sltDistrito">
+        <option ng-repeat="distrito in vm.distritos" value="{{distrito.name}}">
+      </datalist>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+
+      <label for="nTelefono">Numero de Telefono</label>
+      <input type="tel" NombreTarea="nTelefono" class="form-control" name="nTelefono" ng-model="vm.editar.telefono" maxlength="11"
+        minlength="8" required>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+
+
+
+    </div>
+    <div class="col-md-6">
+      <label for="txtHorario">Mensaje para reservación</label>
+      <textarea type="text" NombreTarea="txtHorario" class="form-control" name="txtHorario" ng-model="vm.editar.horario" style="height:100px"
+        required></textarea>
+      <small class="form-text text-muted">Este campo es requerNombreTareao</small>
+      <div class="col-md-6">
+        <label for="latitud">Latitud en Mapa</label>
+        <input type="text" NombreTarea="latitud" class="form-control" name="latitud" ng-model="vm.editar.latitud" required>
+      </div>
+      <div class="col-md-6">
+        <label for="longitud">Longitud en Mapa</label>
+        <input type="text" NombreTarea="longitud" class="form-control" name="longitud" ng-model="vm.editar.longitud" required>
+      </div>
+
+      <button type="submit" class="btn btn-success">Editar Tarea</button>
+    </div>
+    <button type="button" class="" ng-click="vm.cambiarEstadoTarea('inactivo')">
+      <i class="far fa-times-circle"></i>Desactivar</button>
+    <td>
+      <button type="button" class="" ng-click="vm.cambiarEstadoTarea('activo')">
+        <i class="far fa-check-circle"></i>Activar</button>
+    </td>
+
+
+  </form>
+
+</div>
