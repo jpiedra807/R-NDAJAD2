@@ -1,7 +1,7 @@
 {
-  "name": "correos-de-costa-rica",
+  "name": "RÄNDAJAD",
   "version": "1.0.0",
-  "description": "Correos de Costa Rica",
+  "description": "RÄNDAJAD",
   "main": "./api/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -44,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ByTicos/correos.git"
+    "url": "git+https://github.com/jpiedra807/R-NDAJAD2"
   },
-  "author": "ByTicos",
+  "author": "JPC",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ByTicos/correos/issues"
+    "url": "https://github.com/jpiedra807/R-NDAJAD2"
   },
-  "homepage": "https://github.com/ByTicos/correos#readme"
+  "homepage": "https://github.com/jpiedra807/R-NDAJAD2"
 }
